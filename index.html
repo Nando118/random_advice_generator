@@ -1,47 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Advice generator app</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/GitHub_logo.png"
+    />
 
-  <link rel="stylesheet" href="./style.css">
+    <title>Advice Generator</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Anek+Odia:wght@100&family=Manrope:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anek+Odia:wght@100&family=Manrope:wght@800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="content">
+      <div id="card">
+        <div class="image-frame">
+          <img
+            class="card-image"
+            src="images/Frame.svg"
+            alt="Abraham Lincoln Face"
+          />
+        </div>
+        <p class="advice">ADVICE <span class="advice-num"></span></p>
+        <p class="advice-description">
+          <span class="advice-description-result"></span>
+        </p>
 
-</head>
-<body>
-
-  <!-- Advice ID goes here -->
-
-  <div class="content">
-    <div id="card">
-      <p class="advice">
-        ADVICE <span class="advice-num"></span>
-      </p>
-      <p class="advice-description">
-        <span class="advice-description-result"></span>
-      </p>
-      <img class="divider" src="./images/pattern-divider-desktop.svg" alt="divider">
-      
-      <div class="button" onclick="getAdvice()">
-        <button class="btn"><img src="images/icon-dice.svg" alt="dice-btn"></button>
+        <div class="button" onclick="getAdvice()">
+          <button class="btn">
+            <img src="images/icon-dice.svg" alt="dice-icon" />
+          </button>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- Advice text goes here -->
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-
-  <script src="./script.js"></script>
-</body>
+    <script src="./script.js"></script>
+  </body>
 </html>

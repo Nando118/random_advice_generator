@@ -1,49 +1,101 @@
-html, body {
-    height: 100%;
-    background-color: hsl(218, 23%, 16%);
-    font-family: 'Manrope', sans-serif;
-}
-
-.attribution { 
-    font-size: 11px; text-align: center; 
-}
-
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
+html,
+body {
+  height: 100%;
+  background-color: hsl(218, 23%, 16%);
+  font-family: "Manrope", sans-serif;
 }
 
 .content {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#card {
+  max-height: 550px;
+  width: 263px;
+  text-align: center;
+  padding: 20px;
+  background-color: hsl(217, 19%, 24%);
+  border-radius: 20px;
+}
+
+#card .image-frame img.card-image {
+  max-height: 75px;
+  margin-top: 1rem;
+  margin-bottom: 0.6rem;
+}
+
+#card .advice {
+  color: hsl(150, 100%, 66%);
+  letter-spacing: 3px;
+  font-size: 14px;
+}
+#card .advice-description {
+  color: hsl(193, 38%, 86%);
+  font-size: 28px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button button.btn {
+  position: relative;
+  top: 50px;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: hsl(150, 100%, 66%);
+}
+
+.button button.btn:hover {
+  box-shadow: 0px 0px 47px 4px hsl(150, 100%, 66%);
+  -webkit-box-shadow: 0px 0px 47px 4px hsl(150, 100%, 66%);
+}
+
+@media only screen and (max-width: 600px) {
+  .content {
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+  }
 
-#card {
-    max-width: 500px;
+  #card {
+    max-width: 375px;
     background-color: hsl(217, 19%, 24%);
     text-align: center;
     padding: 20px;
     border-radius: 15px;
-}
+  }
 
-#card .advice {
+  #card .advice {
     color: hsl(150, 100%, 66%);
     letter-spacing: 3px;
     font-size: 14px;
-}
-#card .advice-description {
+  }
+  #card .advice-description {
     color: hsl(193, 38%, 86%);
+    letter-spacing: 3px;
     font-size: 28px;
-}
+  }
 
-.button {
+  .divider {
+    max-width: 100%;
+  }
+
+  .button {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+  }
 
-.button button.btn{
+  .button button.btn {
     position: relative;
     top: 50px;
     border: none;
@@ -51,53 +103,5 @@ html, body {
     width: 50px;
     height: 50px;
     background-color: hsl(150, 100%, 66%);
-}
-
-@media only screen and (max-width: 600px) {
-    
-    .content {
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    #card {
-        max-width: 375px;
-        background-color: hsl(217, 19%, 24%);
-        text-align: center;
-        padding: 20px;
-        border-radius: 15px;
-    }
-    
-    #card .advice {
-        color: hsl(150, 100%, 66%);
-        letter-spacing: 3px;
-        font-size: 14px;
-    }
-    #card .advice-description {
-        color: hsl(193, 38%, 86%);
-        letter-spacing: 3px;
-        font-size: 28px;
-    }
-    
-    .divider {
-        max-width: 100%;
-    }
-
-    .button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .button button.btn{
-        position: relative;
-        top: 50px;
-        border: none;
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
-        background-color: hsl(150, 100%, 66%);
-    }
+  }
 }
